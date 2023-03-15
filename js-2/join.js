@@ -1,9 +1,8 @@
 function join (arr){
-    let cadena = join.toString();
-    let total = arr;
-    for (let i = 0; i < arr; i++){
-
-    }return total;
+    let cadena = "";
+    for (let i = 0; i < arr.length; i++){
+        cadena = cadena + " " + arr[i];
+    }return cadena;
 }
 
 console.log(join([1, 2, 3])) // 6
