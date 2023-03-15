@@ -1,16 +1,19 @@
-function maxIndice(numero) {
-    if (numero.length === 0) {
-      return -1;
-    }
-    let mayor = numero[0];
-    for (let i = 0; i < numero.length; i++) {
-      if (numero[i] > mayor[i]) {
-        mayor = numero[i];
+function maxIndex(numero){
+  let maxIn = 0;
+  let numeroMax = 0;
+  if (numero.length !==0){
+      for (let i=0; i < numero.length; i++){
+          if (numeroMax < numero [i]){
+              numeroMax = numero [i];
+              maxIn = i;
+          }
       }
-      return mayor;
-    }
+      return maxIn;
+  }else {
+      return -1
   }
+}
   
-  console.log(maxIndice([1, 3, 2])); // 1
-  console.log(maxIndice([10, 9, 8, 7, 6, 5, 4])); // 10
-  console.log(maxIndice([])); // -1
+  console.log(maxIndex([1, 3, 2])); // => index 1
+  console.log(maxIndex([10, 9, 8, 7, 6, 5, 4])); // => index 0
+  console.log(maxIndex([])); // => -1
