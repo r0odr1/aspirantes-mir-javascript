@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Palindromo</title>
+</head>
+<body>
+	<label for="texto">Escriba una palabra:</label>
+	<input type="text" id="texto">
+	<button onclick="Validacion()">Validar</button>
+	<p id="resultado"></p>
+	<script>
+		function Validacion() {
+            let texto = document.getElementById("texto").value;
+			let j = "";
+			for (let i = texto.length - 1; i >= 0; i--) {
+				j += texto[i];
+			}if (texto === j) {
+				document.getElementById("resultado").innerHTML = "La palabra " + texto + " es palíndroma.";
+			} else {
+				document.getElementById("resultado").innerHTML = "La palabra " + texto + " no es palíndroma.";
+			}
+		}
+	</script>
+</body>
+</html>
