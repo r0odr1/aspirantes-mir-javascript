@@ -1,0 +1,19 @@
+li {
+	list-style: none;
+	margin-bottom: 1px;
+	color: rgb(0, 110, 255);
+	background-color: rgb(176, 240, 176);
+	
+}
+
+a.enlace-eliminar {
+	margin-left: 10px;
+	text-decoration: none;
+	font-size: 1rem;
+}
+
+.tachado {
+	text-decoration: line-through;
+	color: aqua;
+
+}
